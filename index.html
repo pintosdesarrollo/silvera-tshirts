@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="https://www.mercadopago.com.ar/checkout/v1/checkout.js"></script>
+    <!-- link toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- link boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- link css -->
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+    <!-- HEADER Y NAV -->
+    <header class="navbar navbar-expand-lg fixed-header">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="redesHeader">
+                <a href=""><img src="./img/iguno.png" alt="" class="imgLogo"></a>
+                <a href=""><img src="./img/logo-de-tk.png" alt="" class="imgLogo"></a>
+                <a href=""><img src="./img/logo-d-whatsapp.png" alt="" class="imgLogo"></a>
+            </div>
+            <a href="index.html"><img src="./img/silvera-dos.png" alt="" class="fotoSilvera"></a>
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link colorLink" href="#contenedorProductos">productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorLink" href="./html/mayorista.html">mayorista</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorLink" href="./html/personalizados.html">peronalizados</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- <h1>oferta 2x1</h1> -->
+    <div class="imgFondo">
+        <img src="./img/foto-fondo.png" class="img-fluid" alt="...">
+    </div>
+   
+    <div id="contenedorProductos" class="row"></div>
+    <hr>
+    <h2>Carrito de Compras</h2>
+    <h3>el precio de los productos puede variar dependiendo el talle</h3>
+    <h3>El total de la compra es de <span id="total"></span></h3>
+    <button class="btn colorBoton" id="verCarrito">Ver carrito</button>
+    <button class="btn colorBoton" id="vaciarCarrito">Vaciar carrito</button>
+    <div id="contenedorCarrito" class="row"></div>
+    <button class="pay-button" data-preference-id="1234567890">Pagar</button>
+
+
+
+
+
+
+    <div id="whatsapp-btn">
+        <a href="https://api.whatsapp.com/send?phone=TUNUMERODETELEFONO" target="_blank">
+            <img src="img/logo.webp" alt="WhatsApp">
+        </a>
+    </div>
+    <div class="carritos">
+        <a href="https://api.whatsapp.com/send?phone=TUNUMERODETELEFONO" target="_blank">
+            <img src="ruta/a/tu/imagen/whatsapp.png" alt="carrito">
+        </a>
+    </div>
+
+
+
+    <h2 class="subNos">nosotros</h2>
+    <div class="divNosotros">
+        <div class="nosotros uno">
+            <div class="divTexto">
+                <h3>texto 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ut ea voluptate possimus excepturi
+                    consequuntur suscipit odit accusantium quos. Ex, non expedita voluptatibus dolor explicabo
+                    consequatur eos at. Assumenda, totam?</p>
+                <h4>subtitulo</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, explicabo, obcaecati voluptatum iure
+                    accusamus sed labore exercitationem cumque alias, aliquid ex rem officiis repellendus quam quasi!
+                    Numquam nobis reiciendis recusandae.</p>
+            </div>
+            <div class="divImagenUno">
+                <img src="./img/remera-uno.jpg" alt="" class="img-mobile">
+            </div>
+        </div>
+        <div class="nosotros dos">
+            <div class="divImagen">
+                <img src="./img/remera-uno.jpg" alt="" class="img-dos">
+            </div>
+            <div class="divTexto">
+                <h3>texto 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ut ea voluptate possimus excepturi
+                    consequuntur suscipit odit accusantium quos. Ex, non expedita voluptatibus dolor explicabo
+                    consequatur eos at. Assumenda, totam?</p>
+                <h4>subtitulo 2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, explicabo, obcaecati voluptatum iure
+                    accusamus sed labore exercitationem cumque alias, aliquid ex rem officiis repellendus quam quasi!
+                    Numquam nobis reiciendis recusandae.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="seccionEnlaces">
+        <div class="divEnlaces">
+            <h3>personalizados</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam sint soluta magni ipsum
+                molestias harum vitae consectetur tempore, recusandae aliquam velit, exercitationem in dicta ab, quod
+                cumque nesciunt perspiciatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+                doloremque ut veritatis corrupti blanditiis dignissimos incidunt eius vel, exercitationem cumque sequi
+                numquam corporis accusamus distinctio</p>
+            <img src="./img/personalizado-enlace-prueba.png" alt="">
+            <a href="" class="btnMaas">mas info</a>
+        </div>
+        <div class="divEnlaces">
+            <h3>mayorista</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam totam nemo provident a! Reprehenderit
+                officiis fugit quidem nesciunt aperiam, ex et. Ipsam, quidem aliquam? Quaerat dolorum et magni quasi
+                atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, nemo expedita quis vel, corrupti
+                sequi nulla aliquid reiciendis ipsam quod unde hic? Quidem veritatis dolorum, animi quae consequuntur
+                atque aliquam.</p>
+            <img src="./img/mayorista-enlace.png" alt="">
+            <a href="" class="btnMaas">mas info</a>
+        </div>
+        <div class="divEnlaces">
+            <h3>clientes</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, est! Soluta beatae ad quod
+                accusamus voluptates illo accusantium reiciendis ipsum aperiam, nam tenetur, consequuntur fugit, vero
+                facilis eos sint quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quam eius enim
+                numquam aliquam nobis magni mollitia commodi nulla voluptatem corporis modi, harum voluptas esse.
+                Provident id ea nemo repellendus!</p>
+            <img src="./img/fotito.png" alt="">
+            <a href="" class="btnMaas">mas info</a>
+        </div>
+    </div>
+
+
+
+    <iframe class="formulario"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfFK3990nJcZGCVJo3ijoq6Fj63IA0ItN7mOrxqOza2iNQKzg/viewform?embedded=true"
+        width="640" height="688" frameborder="0" marginheight="0" marginwidth="0">Cargando…
+    </iframe>
+
+
+
+
+    <footer>
+        <div>redes sociales
+            <a href=""><img src="" alt="">instagram</a>
+            <a href=""><img src="" alt="">whathsapp</a>
+            <a href=""><img src="" alt="">tiktok</a>
+        </div>
+        <p>creado por @jeropintoss Copyright todos los derechos reservados</p>
+    </footer>
+
+
+  
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

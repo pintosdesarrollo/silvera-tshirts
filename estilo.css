@@ -1,0 +1,538 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  /* border: 1px solid red; */
+}
+
+body {
+  font-size: 16px;
+  /* Tamaño de fuente predeterminado para pantallas medianas y grandes */
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.navbar-nav .nav-link:hover {
+  color: white
+    /* color deseado */
+  ;
+}
+
+
+
+.navbar-nav .nav-link {
+  color: white;
+
+}
+
+.navbar {
+  background-color: black;
+}
+
+.fotoSilvera {
+  width: 200px;
+  height: 60px;
+  margin-left: 350px;
+}
+
+.redesHeader a {
+  margin: 10px;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.imgFondo {
+  margin-top: 70px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  margin: 25px;
+  background-color: white;
+}
+
+.card img {
+  height: 205px;
+}
+
+.colorBoton {
+  color: white;
+  background-color: black;
+
+}
+
+/* .colorBoton:hover{
+    background-color: blueviolet;
+    color: white;
+} */
+
+.formulario {
+  display: none;
+}
+
+#whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+#whatsapp-btn img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: red;
+}
+
+.carritos {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  margin: 35px;
+  background-color: white;
+}
+
+.carritos img {
+  width: 60px;
+  height: 60px;
+}
+
+.divNosotros {
+  display: block;
+}
+
+.divNosotros div {
+  margin: 15px;
+}
+
+.nosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: gray;
+
+}
+
+.divImagen img {
+  width: 600px;
+  height: 450px;
+}
+
+.divImagenUno img {
+  width: 600px;
+  height: 450px;
+}
+
+.divTexto {
+  width: 650px;
+  height: 450px;
+  color: white;
+}
+
+.subNos {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.seccionEnlaces {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.divEnlaces {
+  width: 350px;
+  height: 550px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 25px;
+  text-align: center;
+}
+
+.divEnlaces img {
+  width: 350px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.divEnlaces h3 {
+  margin: 10px;
+}
+
+.divEnlaces p {
+  margin-bottom: 15px;
+}
+
+.btnMaas {
+  background-color: black;
+  color: gray;
+  border: 2px solid white;
+  border-radius: 15px;
+
+
+}
+
+footer {
+  background-color: gray;
+}
+
+.imagenPer, .textoPersonalizados {
+  width: 650px;
+  height: 500px;
+  margin: 15px
+}
+
+
+ 
+.seccionDPer {
+  display: flex;
+  justify-content: center;
+  
+}
+.textoPersonalizados {
+  color: white;
+}
+
+.consultaWhat {
+  background-color: green;
+  color: white;
+  display: flex;
+  align-items: center;
+  border: 4px solid white;
+  border-radius: 14px;
+  width: 600px;
+  height: 100px;
+  position: absolute;
+  top: 1300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 25px;
+}
+
+
+
+.consultaWhat a {
+  font-size: 45px;
+  margin-left: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+.consultaWhat img {
+  width: 60px;
+  height: 60px;
+  margin-left: 55px;
+}
+
+.contCli{
+  width: 100%;
+}
+.contCli div {
+  display: flex; 
+}
+
+.seccionMayor{
+  display: flex;
+  justify-content: center;
+}
+.textoMayor {
+  width: 700px;
+}
+.negro {
+  background-color: black;
+}
+
+.precios {
+  width: 500px;
+  margin: 25px;
+}
+
+.seccionDeMayor {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+/* Estilos adicionales para ajustar el tamaño de las imágenes */
+/* Estilos adicionales para ajustar el tamaño de las imágenes */
+
+/* Estilos adicionales para mostrar cuatro productos por fila en versión de escritorio */
+
+
+/* Media query para pantallas pequeñas (máximo 767px) */
+@media (max-width: 767px) {
+  body {
+    font-size: 10px;
+  }
+  .precios {
+    width: 280px;
+    margin: 15px;
+  }
+  
+  .seccionDeMayor {
+    display: block;
+    align-items: center;
+  }
+  
+  .seccionMayor{
+    display: block;
+    
+  }
+  .textoMayor {
+    width: auto;
+  }
+
+  .container-fluid {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .redesHeader {
+    order: 3;
+  }
+
+  .navbar-collapse {
+    order: 1;
+  }
+
+  .navbar-nav .nav-link {
+    margin-right: 5px;
+  }
+
+  .fotoSilvera {
+    width: 140px;
+    height: 60px;
+    margin-left: -5px;
+    /* margin-top: -40px; */
+    order: 2;
+  }
+
+  .redesHeader a {
+    margin: 5px;
+    display: block;
+  }
+
+  .imgLogo {
+    width: 20px;
+    height: 20px;
+  }
+
+
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 10px;
+    width: 160px;
+   
+  }
+
+  .imgFondo h2 {
+    font-size: 7px;
+  }
+
+  .colorBoton {
+    font-size: 12px;
+  }
+
+
+  .card img {
+    height: 140px;
+  }
+
+  .col-md-6,
+  .col-lg-4,
+  .col-xl-3 {
+    padding: 4px;
+    /* Espacio lateral más pequeño en versión responsive */
+  }
+
+  .row {
+    margin: 0 -4px;
+    margin-right: -25px;
+    justify-content: center;
+    /* Elimina el margen entre las tarjetas en versión responsive */
+
+  }
+
+  .imgFondo {
+    margin-top: 100px;
+  }
+
+  .divImagen img {
+    width: 100px;
+    height: 250px;
+  }
+
+  .divImagenUno img {
+    width: 100px;
+    height: 250px;
+  }
+  .img-mobile {
+    /* Agrega aquí la URL de la imagen que deseas mostrar en la versión móvil */
+    content: url("./img/imagen-texto-uno.png");
+    /* Ajusta el tamaño y otras propiedades de la imagen si es necesario */
+}
+.img-dos{
+  content: url("./img/imagen-texto-uno.png");
+}
+  .divTexto {
+    width: 200px;
+    height: 250px;
+    color: white;
+  }
+
+  .seccionEnlaces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divEnlaces {
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 15px;
+    text-align: center;
+  }
+
+  .divEnlaces img {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+
+  .divEnlaces p {
+    margin-bottom: 15px;
+    font-size: 15px;
+  }
+
+  #contenedorProductos .col-md-6 {
+    flex: 0 0 50%; /* Mostrar dos productos por fila */
+  }
+  
+  #contenedorProductos .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px; /* Añadimos un margen negativo para compensar el espacio entre las columnas */
+  }
+  body {
+    font-size: 10px;
+  }
+
+  #contenedorProductos .col-md-6 {
+    flex: 0 0 50%; /* Mostrar dos productos por fila en versión mobile */
+  }
+
+  .imagenPer {
+    width: 350px;
+    height: 100px;
+    margin: 10px
+  }
+
+  .textoPersonalizados {
+    width: 350px;
+    height: 200px;
+  }
+  
+  
+   
+  .seccionDPer {
+    display: block;
+    align-items: center;
+    
+  }
+
+  
+.consultaWhat {
+  width: 250px;
+  height: 50px;
+  position: absolute;
+  top: 1000px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.consultaWhat a {
+  font-size: 20px;
+  margin-left: 15px;
+  
+}
+
+.consultaWhat img {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+}
+
+
+}
+
+
+@media (max-width: 385px) {
+
+  .card {
+    width: 140px;
+   
+  }
+}
+
+
+
+
+
+
+
+/* Media query para pantallas medianas (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 16px;
+  }
+
+  .imgFondo h2 {
+    font-size: 16px;
+  }
+
+  .colorBoton {
+    font-size: 14px;
+  }
+  #contenedorProductos .col-md-6 {
+    flex: 0 0 33.33%; /* Mostrar tres productos por fila */
+  }
+}
+
+/* Media query para pantallas grandes (mínimo 992px) */
+@media (min-width: 992px) {
+  body {
+    font-size: 18px;
+  }
+
+  .imgFondo h2 {
+    font-size: 18px;
+  }
+
+  .colorBoton {
+    font-size: 16px;
+  }
+  #contenedorProductos .col-md-6 {
+    flex: 0 0 25%; /* Mostrar cuatro productos por fila */
+  }
+}
